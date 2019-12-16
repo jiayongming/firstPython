@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # coding=utf-8
 
+import math
+
 # 例1：if 基本用法
 
 flag = False
@@ -56,4 +58,13 @@ while True:
         break
 
 for i in list:
+    pass
     print i
+
+for i in list:
+    pass
+
+print(abs(-3))
+print(math.sin(30))
+print math.e
+print math.pi
