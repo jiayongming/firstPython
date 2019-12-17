@@ -26,7 +26,8 @@ class DB():
 
 if __name__ == '__main__':
     with DB(host='10.0.0.246', user='analyse', passwd='GemanticYes!', db='wine') as db:
-        db.execute('select * from pay_record')
+        result = db.execute('select * from pay_record')
+        print(result)
         print(db)
         for i in db:
             print(i)
