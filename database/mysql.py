@@ -1,11 +1,11 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
 import pymysql
 
 
 class DB():
-    def __init__(self, host='10.0.0.246', port=3306, db='wine', user='analyse', passwd='GemanticYes!', charset='utf8'):
+    def __init__(self, host='localhost', port=3306, db='wine', user='analyse', passwd='GemanticYes!', charset='utf8'):
         # 建立连接
         self.conn = pymysql.connect(host=host, port=port, db=db, user=user, passwd=passwd, charset=charset)
         # 创建游标，操作设置为字典类型
