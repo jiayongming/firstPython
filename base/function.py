@@ -21,13 +21,13 @@ return [表达式] 结束函数，选择性地返回一个值给调用方。不�
 
 def printme( str ):
    # 打印传入的字符串到标准显示设备上
-   print str
+   print(str)
    return
 
 # 调用函数
 var1 = printme("我要调用用户自定义函数!")
 printme("再次调用同一函数")
-print var1
+print(var1)
 
 """
 可更改(mutable)与不可更改(immutable)对象
@@ -48,29 +48,29 @@ def ChangeInt(a):
 
 b = 2
 var1 = ChangeInt(b)
-print b  # 结果是 2
-print var1
+print(b)  # 结果是 2
+print(var1)
 
 # 传可变对象实例
 # 可写函数说明
 def changeme(mylist):
     # 修改传入的列表
     mylist.append([1, 2, 3, 4])
-    print "函数内取值: ", mylist
+    print("函数内取值: ", mylist)
     return
 
 
 # 调用changeme函数
 mylist = [10, 20, 30]
 changeme(mylist)
-print "函数外取值: ", mylist
+print("函数外取值: ", mylist)
 
 
 # 可写函数说明
 def printinfo(name, age):
     "打印任何传入的字符串"
-    print "Name: ", name
-    print "Age ", age
+    print("Name: ", name)
+    print("Age ", age)
     return
 
 
@@ -80,8 +80,8 @@ printinfo(age=50, name="miki")
 
 def printinfo(name, age=35):
     "打印任何传入的字符串"
-    print "Name: ", name
-    print "Age ", age
+    print("Name: ", name)
+    print("Age ", age)
     return
 
 
@@ -93,10 +93,10 @@ printinfo(name="miki")
 # 可写函数说明
 def printinfo(arg1, *vartuple):
     "打印任何传入的参数"
-    print "输出: "
-    print arg1
+    print("输出: ")
+    print(arg1)
     for var in vartuple:
-        print var
+        print(var)
     return
 
 
@@ -107,5 +107,5 @@ printinfo(70, 60, 50)
 sum = lambda arg1, arg2: arg1 + arg2
 
 # 调用sum函数
-print "相加后的值为 : ", sum(10, 20)
-print "相加后的值为 : ", sum(20, 20)
+print("相加后的值为 : ", sum(10, 20))
+print("相加后的值为 : ", sum(20, 20))
