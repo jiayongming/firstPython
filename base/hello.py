@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # coding=utf-8
+from function import printinfo
+
+printinfo(10)
 
 print ("你好，世界")
 print ('hello');print ('runoob')

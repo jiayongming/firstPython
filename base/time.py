@@ -4,12 +4,12 @@ import calendar
 
 import time  # 引入time模块
 
-print "当前时间戳为:", time.time()
+print "当前时间戳为:", base.time()
 
-localtime = time.localtime(time.time())
+localtime = time.localtime(base.time())
 print "本地时间为 :", localtime
 
-localtime = time.asctime( time.localtime(time.time()) )
+localtime = time.asctime(time.localtime(base.time()))
 print "本地时间为 :", localtime
 
 # 格式化成2016-03-20 11:45:39形式
