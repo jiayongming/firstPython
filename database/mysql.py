@@ -31,3 +31,12 @@ if __name__ == '__main__':
         print(db)
         for i in db:
             print(i)
+
+"""
+with…as语句执行顺序：
+–>首先执行expression里面的__enter__函数，它的返回值会赋给as后面的variable，想让它返回什么就返回什么，只要你知道怎么处理就可以了，如果不写as variable，返回值会被忽略。
+–>然后，开始执行with-block中的语句，不论成功失败(比如发生异常、错误，设置sys.exit())，在with-block执行完成后，会执行expression中的__exit__函数。
+
+当with...as语句中with-block被执行或者终止后，这个类对象应该做什么。如果这个码块执行成功，则exception_type,exception_val, trace的输入值都是null。
+如果码块出错了，就会变成像try/except/finally语句一样，exception_type, exception_val, trace 这三个值系统会分配值。
+"""
